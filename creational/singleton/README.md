@@ -189,6 +189,7 @@ class ConfigManager(metaclass=SingletonMeta):
 ```
 - **Decoupled**: You don’t need to add Singleton logic in each class (unlike `__new__` approach).
 - **Clean**: No need to manage `_initialized` flags or extra logic in your classes.
+- **It is Thread safe.**
 
 But it’s overkill if you only have a single class needing Singleton behavior — in that case,` __new__` approach is simpler.
 
